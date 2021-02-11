@@ -13,10 +13,10 @@
 		overflow: hidden;
 
 		.hidden {
-			display: none;
+			display: none !important;
 		}
-		.visible {
-			display: block;
+		.not-visible {
+			visibility: hidden;
 		}
 
 		.top-title {

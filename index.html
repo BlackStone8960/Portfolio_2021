@@ -252,31 +252,83 @@
       <div class="section__inner">
         <div class="works-wrapper">
           <div class="capture-wrapper">
-            <a href="https://classpad.net/landing" id="cpnet">
+            <a href="https://classpad.net/landing" class="thumb" data-img="capture1">
               <img src="/img/CPnet/graph.png" alt="CPnet">
             </a>
-            <a href="" id="onlinezemi">
+            <a href="" class="thumb" data-img="capture2">
               <img src="/img/Online_zemi/onlinezemi.nokai.jp_high_nada_ (1).png" alt="online-zemi">
             </a>
-            <a href="">
+            <a href="" class="thumb" data-img="capture3">
               <img src="/img/Winter_course/winter_course_top_trimmed.png" alt="winter-course">
             </a>
-            <a href="https://the-first-app-expensify.herokuapp.com/">
+            <a href="https://the-first-app-expensify.herokuapp.com/" class="thumb" data-img="capture4">
               <img src="/img/Expensify_app/localhost_8080_dashboard.png" alt="expensify-app">
             </a>
-            <a href="">
+            <a href="" class="thumb" data-img="capture5">
               <img src="/img/Photo_links/Photo_links_1.png" alt="Photo-links">
             </a>
           </div>
-          <div class="site-description">
-            <img src="img/CPnet/Interactive_Menu.gif" alt="interactive-menu">
-            <div class="site-description__text">
-              <h2 class="description-title">ClassPad.net</h2>
-              <p class="description-sentence">
-                This is an educational math app. I fixed about 30 errors in 5 months and make it possible to separate graph boxes, drawing vector, complex calculation etc.
-              </p>
-              <h3 class="whatiused">What I used is...</h3>
-              <em class="used-skill">JavaScript, HTML5, CSS3</em>
+          <div>
+            <div class="site-description" id="capture1">
+              <a href="https://classpad.net/landing" class="linked-img">
+                <img src="img/CPnet/Interactive_Menu.gif" alt="interactive-menu">
+              </a>
+              <div class="site-description__text">
+                <h2 class="description-title">ClassPad.net</h2>
+                <p class="description-sentence">
+                  This is an educational math app. I fixed about 30 errors in 5 months and make it possible to <em>separate graph boxes, drawing vector, complex calculation</em> etc.
+                </p>
+                <h3 class="whatiused">What I used is...</h3>
+                <em class="used-skill">JavaScript, Jenkins, gulp, jQuery, HTML5, CSS3</em>
+              </div>
+            </div>
+            <div class="site-description hidden" id="capture2">
+              <img src="img/Online_zemi/onlinezemi.nokai.jp_about_ (2).png" alt="onlinezemi" class="no-link-img">
+              <div class="site-description__text">
+                <h2 class="description-title">Nokai Online Seminar</h2>
+                <p class="description-sentence">
+                  This is a site of an online seminar. I can send you the URL of this site if you message me.
+                </p>
+                <h3 class="whatiused">What I used is...</h3>
+                <em class="used-skill">Vue.js, JavaScript, HTML5, CSS3</em>
+              </div>
+            </div>
+            <div class="site-description hidden" id="capture3">
+              <img src="img/Winter_course/winter_course_4_trimmed.png" alt="winter_course" class="no-link-img">
+              <div class="site-description__text">
+                <h2 class="description-title">Nokai Winter Seminar</h2>
+                <p class="description-sentence">
+                  This is a web site for seminar held regularly in winter.
+                </p>
+                <h3 class="whatiused">What I used is...</h3>
+                <em class="used-skill">Laravel, PHP, JavaScript, HTML5, CSS3</em>
+              </div>
+            </div>
+            <div class="site-description hidden" id="capture4">
+              <a href="" class="linked-img">
+                <img src="img/Expensify_app/localhost_8080_dashboard (1).png" alt="expensify-app">
+              </a>
+              <div class="site-description__text">
+                <h2 class="description-title">Expensify App</h2>
+                <p class="description-sentence">
+                  This is an application to record daily expenses. You can make your account, and manage your own expenses datum with this app.
+                </p>
+                <h3 class="whatiused">What I used is...</h3>
+                <em class="used-skill">React.js, Firebase, Heroku, JavaScript, HTML5, CSS3</em>
+              </div>
+            </div>
+            <div class="site-description hidden" id="capture5">
+              <a href="" class="linked-img">
+                <img src="img/Photo_links/Photo_links_4.png" alt="Photo-links">
+              </a>
+              <div class="site-description__text">
+                <h2 class="description-title">Photo Links</h2>
+                <p class="description-sentence">
+                  This is a site made with referencing a design of <a href="https://www.deviantart.com/">deviantart.com</a>.
+                </p>
+                <h3 class="whatiused">What I used is...</h3>
+                <em class="used-skill">Bootstrap, JavaScript, HTML5, CSS3</em>
+              </div>
             </div>
           </div>
         </div>
@@ -397,4 +449,5 @@
   </div>
 </body>
 <script src="js/pageTransition.js"></script>
+<script src="js/switchImages.js"></script>
 </html>

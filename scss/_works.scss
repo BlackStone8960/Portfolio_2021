@@ -27,21 +27,34 @@
       color: #fff;
       font-family: "Century Gothic";
 
-      img {
+      .linked-img {
+        width: 50%;
+        display: block;
+        img {
+          width: 100%;
+        }
+      }
+      .no-link-img {
         width: 50%;
       }
 
       &__text {
         padding-left: 20px;
+        width: 50%;
+        box-sizing: border-box;
 
         .description-title {
-          font-size: 26px;
+          font-size: 24px;
           font-weight: normal;
-          margin-bottom: 16px;
+          margin-bottom: 6px;
         }
         .description-sentence {
-          margin-bottom: 22px;
-          font-size: 22px;
+          margin-bottom: 9px;
+          font-size: 18px;
+
+          a:hover, em {
+            text-decoration: underline;
+          }
         }
         .whatiused {
           font-size: 22px;
@@ -51,6 +64,7 @@
           color: $green;
           font-weight: bold;
           font-size: 26px;
+          line-height: 1.4;
         }
       }
     }

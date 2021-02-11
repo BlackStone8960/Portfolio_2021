@@ -17,6 +17,15 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+a {
+  color: #00CC6A;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
 .section-wrapper {
   position: relative;
   overflow: hidden;
@@ -35,11 +44,11 @@ time, mark, audio, video {
 }
 
 .section-wrapper .section .hidden {
-  display: none;
+  display: none !important;
 }
 
-.section-wrapper .section .visible {
-  display: block;
+.section-wrapper .section .not-visible {
+  visibility: hidden;
 }
 
 .section-wrapper .section .top-title {
@@ -447,23 +456,39 @@ time, mark, audio, video {
   font-family: "Century Gothic";
 }
 
-#works .section__inner .site-description img {
+#works .section__inner .site-description .linked-img {
+  width: 50%;
+  display: block;
+}
+
+#works .section__inner .site-description .linked-img img {
+  width: 100%;
+}
+
+#works .section__inner .site-description .no-link-img {
   width: 50%;
 }
 
 #works .section__inner .site-description__text {
   padding-left: 20px;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #works .section__inner .site-description__text .description-title {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: normal;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 #works .section__inner .site-description__text .description-sentence {
-  margin-bottom: 22px;
-  font-size: 22px;
+  margin-bottom: 9px;
+  font-size: 18px;
+}
+
+#works .section__inner .site-description__text .description-sentence a:hover, #works .section__inner .site-description__text .description-sentence em {
+  text-decoration: underline;
 }
 
 #works .section__inner .site-description__text .whatiused {
@@ -475,6 +500,7 @@ time, mark, audio, video {
   color: #00CC6A;
   font-weight: bold;
   font-size: 26px;
+  line-height: 1.4;
 }
 
 #contact .contact-wrapper {

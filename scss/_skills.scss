@@ -11,6 +11,10 @@
         display: flex;
         justify-content: space-between;
         font-family: "Century Gothic";
+
+        @include sp {
+          flex-direction: column;
+        }
   
         .skill-block {
           width: 49%;
@@ -20,6 +24,12 @@
           text-align: center;
           box-sizing: border-box;
           margin-bottom: 16px;
+
+          @include sp {
+            width: 100%;
+            padding: 0 10vw 2vw;
+            margin-bottom: 4vw;
+          }
 
           &--last {
             width: 100%;
@@ -31,6 +41,10 @@
             color: $green;
             font-size: 22px;
             margin: 10px 0;
+
+            @include sp {
+              margin: 2vw 0;
+            }
           }
   
           &__icons {
@@ -43,14 +57,26 @@
               font-weight: bold;
               color: $black;
               font-size: 16px;
+
+              @include sp {
+                font-size: 12px;
+              }
             }
           }
           &__icon {
             text-align: center;
             margin: 0 3px 12px;
+
+            @include sp {
+              margin: 0 1.5vw 1vw;
+            }
   
             i {
               font-size: 78px;
+
+              @include sp {
+                font-size: 64px;
+              }
             }
 
             .icon-svg {

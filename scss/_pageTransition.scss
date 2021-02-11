@@ -5,30 +5,57 @@
   // bottom: 0;
   display: block;
   z-index: 100;
+
+  @include sp {
+    top: auto;
+    left: auto;
+    right: auto;
+    z-index: 10;
+  }
 }
 .right {
   top: 0;
   left: 100vw;
   display: block;
   z-index: 10;
+
+  @include sp {
+    top: auto;
+    left: auto;
+  }
 }
 .left {
   top: 0;
   left: -100vw;
   display: block;
   z-index: 10;
+
+  @include sp {
+    top: auto;
+    left: auto;
+  }
 }
 .bottom {
   top: 100vh;
   left: 0;
   display: block;
   z-index: 10;
+
+  @include sp {
+    top: auto;
+    left: auto;
+  }
 }
 .top {
   top: -100vh;
   left: 0;
   display: block;
   z-index: 10;
+
+  @include sp {
+    top: auto;
+    left: auto;
+  }
 }
 .space {
   top: -300vh;
@@ -39,6 +66,10 @@
 
 .page-control {
   color: #fff;
+
+  @include sp {
+    display: none !important;
+  }
 
   .side-arrow { 
     position: absolute;

@@ -7,7 +7,7 @@
 	@include sp {
 		height: auto;
 		overflow: visible;
-		padding: 33.3vh 5vw 10vh;
+		padding: 33.3vh 5vw 20vh;
 		background-color: $black;
 		box-sizing: border-box;
 	}
@@ -19,6 +19,12 @@
     background-color: $black;
 		transition: 1s ease;
 		overflow: hidden;
+
+		&:last-child {
+			@include sp {
+				margin-bottom: 0;
+			}
+		}
 
 		@include sp {
 			height: auto;

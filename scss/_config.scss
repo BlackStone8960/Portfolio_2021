@@ -2,4 +2,22 @@
 
 $black: #171717;
 $green: #00CC6A;
-$red: #ec1e1e;
+// $red: #ec1e1e;
+
+$sp-small: 12px;
+$sp-medium: 16px;
+$sp-large: 20px;
+
+.sp-visible {
+  display: none;
+
+  @include sp {
+    display: block;
+  }
+}
+
+.pc-visible {
+  @include sp {
+    display: none;
+  }
+}

@@ -17,6 +17,11 @@
         box-sizing: border-box;
         margin-bottom: 10px;
         border: none;
+
+        @include sp {
+          font-size: $sp-medium;
+          margin-bottom: 3vw;
+        }
       }
 
       &:focus {
@@ -27,8 +32,16 @@
         display: flex;
         justify-content: space-between;
 
+        @include sp {
+          flex-flow: column;
+        }
+
         input {
           width: 47%;
+
+          @include sp {
+            width: 100%;
+          }
         }
       }
 
@@ -43,6 +56,12 @@
         cursor: pointer;
         font-size: 24px;
         border-radius: 25px;
+
+        @include sp {
+          margin-top: 0;
+          font-size: $sp-large;
+          width: 45%;
+        }
 
         &:hover {
           background-color: lighten($green, 30%);

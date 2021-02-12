@@ -1,0 +1,25 @@
+.footer {
+  @include pc {
+    display: none;
+  }
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4vw 0;
+  z-index: 20;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+  
+    .footer-icon {
+      a {
+        i {
+          color: #fff;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

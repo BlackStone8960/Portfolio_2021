@@ -207,6 +207,10 @@ em {
   font-size: 48px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   top: 0;
   left: 0;
@@ -608,7 +612,11 @@ em {
   width: 67px;
 }
 
-#works .section__inner .capture-wrapper {
+#works .section__inner .works-wrapper {
+  width: 100%;
+}
+
+#works .section__inner .works-wrapper .capture-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,22 +631,22 @@ em {
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .capture-wrapper {
+  #works .section__inner .works-wrapper .capture-wrapper {
     display: none;
   }
 }
 
-#works .section__inner .capture-wrapper a {
+#works .section__inner .works-wrapper .capture-wrapper a {
   display: block;
   width: 19.8%;
   height: 100%;
 }
 
-#works .section__inner .capture-wrapper a img {
+#works .section__inner .works-wrapper .capture-wrapper a img {
   width: 100%;
 }
 
-#works .section__inner .site-description {
+#works .section__inner .works-wrapper .site-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,7 +665,7 @@ em {
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description {
+  #works .section__inner .works-wrapper .site-description {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -669,52 +677,70 @@ em {
   }
 }
 
-#works .section__inner .site-description .description-title-sp {
+#works .section__inner .works-wrapper .site-description .description-title-sp {
   font-size: 20px;
   margin-bottom: 3vw;
   font-weight: normal;
 }
 
-#works .section__inner .site-description .linked-img {
+#works .section__inner .works-wrapper .site-description .swiper-container {
   width: 50%;
+}
+
+#works .section__inner .works-wrapper .site-description .swiper-container .swiper-cube-shadow:before {
+  background-color: #fff;
+}
+
+#works .section__inner .works-wrapper .site-description .swiper-container .swiper-button-prev,
+#works .section__inner .works-wrapper .site-description .swiper-container .swiper-button-next {
+  color: #000;
+  opacity: 0.5;
+}
+
+#works .section__inner .works-wrapper .site-description .swiper-container img {
+  width: 100%;
+}
+
+#works .section__inner .works-wrapper .site-description .linked-img {
+  width: 100%;
   display: block;
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description .linked-img {
+  #works .section__inner .works-wrapper .site-description .linked-img {
     width: 100%;
   }
 }
 
-#works .section__inner .site-description .linked-img img {
+#works .section__inner .works-wrapper .site-description .linked-img img {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description .linked-img img {
+  #works .section__inner .works-wrapper .site-description .linked-img img {
     width: 87%;
     margin: 0 auto;
   }
 }
 
-#works .section__inner .site-description .no-link-img {
+#works .section__inner .works-wrapper .site-description .no-link-img {
   width: 50%;
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description .no-link-img {
+  #works .section__inner .works-wrapper .site-description .no-link-img {
     width: 87%;
   }
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description .sp-site-slide {
+  #works .section__inner .works-wrapper .site-description .sp-site-slide {
     position: relative;
     margin-bottom: 3vw;
   }
 }
 
-#works .section__inner .site-description .sp-site-slide .fas {
+#works .section__inner .works-wrapper .site-description .sp-site-slide .fas {
   color: #fff;
   font-size: 24px;
   position: absolute;
@@ -723,61 +749,53 @@ em {
           transform: translate(0, -50%);
 }
 
-#works .section__inner .site-description .sp-site-slide .chevron-left {
-  left: 0;
-}
-
-#works .section__inner .site-description .sp-site-slide .chevron-right {
-  right: 0;
-}
-
-#works .section__inner .site-description__text {
-  padding-left: 20px;
+#works .section__inner .works-wrapper .site-description__text {
+  padding-left: 50px;
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description__text {
+  #works .section__inner .works-wrapper .site-description__text {
     width: 100%;
     padding: 0;
   }
 }
 
-#works .section__inner .site-description__text .description-title {
+#works .section__inner .works-wrapper .site-description__text .description-title {
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 6px;
 }
 
-#works .section__inner .site-description__text .description-sentence {
+#works .section__inner .works-wrapper .site-description__text .description-sentence {
   margin-bottom: 9px;
   font-size: 18px;
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description__text .description-sentence {
+  #works .section__inner .works-wrapper .site-description__text .description-sentence {
     margin-bottom: 3vw;
     font-size: 16px;
   }
 }
 
-#works .section__inner .site-description__text .description-sentence a:hover, #works .section__inner .site-description__text .description-sentence em {
+#works .section__inner .works-wrapper .site-description__text .description-sentence a:hover, #works .section__inner .works-wrapper .site-description__text .description-sentence em {
   text-decoration: underline;
 }
 
-#works .section__inner .site-description__text .whatiused {
+#works .section__inner .works-wrapper .site-description__text .whatiused {
   font-size: 22px;
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description__text .whatiused {
+  #works .section__inner .works-wrapper .site-description__text .whatiused {
     font-size: 16px;
   }
 }
 
-#works .section__inner .site-description__text .used-skill {
+#works .section__inner .works-wrapper .site-description__text .used-skill {
   font-style: normal;
   color: #00CC6A;
   font-weight: bold;
@@ -786,7 +804,7 @@ em {
 }
 
 @media (max-width: 767px) {
-  #works .section__inner .site-description__text .used-skill {
+  #works .section__inner .works-wrapper .site-description__text .used-skill {
     font-size: 20px;
   }
 }
@@ -1008,8 +1026,8 @@ em {
   height: 100vh;
   background-color: #171717;
   z-index: 15;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .45s;
+  transition: .45s;
 }
 
 #nav.active {

@@ -7,6 +7,7 @@
   <title>Portfolio | Front End Developer | Javascript problem solver using React, Laravel, Vue</title>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -274,14 +275,24 @@
           <div>
             <div class="site-description" id="capture1">
               <h2 class="description-title-sp sp-visible">ClassPad.net</h2>
-              <a href="https://classpad.net/landing" class="linked-img">
-                <img src="img/CPnet/Interactive_Menu.gif" alt="interactive-menu" class="pc-visible">
-                <div class="sp-site-slide sp-visible">
-                  <i class="fas fa-chevron-left chevron-left"></i>
-                  <img src="img/CPnet/Interactive_Menu.gif" alt="interactive-menu" class="sp-visible">
-                  <i class="fas fa-chevron-right chevron-right"></i>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <a href="https://classpad.net/landing" target="_blank" rel="noopener noreferrer" class="linked-img swiper-slide">
+                    <img src="img/CPnet/Interactive_Menu.gif" alt="interactive-menu">
+                  </a>
+                  <a href="https://classpad.net/landing" target="_blank" rel="noopener noreferrer" class="linked-img swiper-slide">
+                    <img src="img/CPnet/Managing_Stickies.gif" alt="interactive-menu">
+                  </a>
+                  <a href="https://classpad.net/landing" target="_blank" rel="noopener noreferrer" class="linked-img swiper-slide">
+                    <img src="img/CPnet/Vector.gif" alt="interactive-menu">
+                  </a>
+                  <a href="https://classpad.net/landing" target="_blank" rel="noopener noreferrer" class="linked-img swiper-slide">
+                    <img src="img/CPnet/Stickies2.gif" alt="interactive-menu">
+                  </a>
                 </div>
-              </a>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
               <div class="site-description__text">
                 <h2 class="description-title pc-visible">ClassPad.net</h2>
                 <p class="description-sentence">
@@ -536,6 +547,28 @@
       </div>
     </a>
   </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  <script>
+    const swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      loop: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      // grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script>
 </body>
 <script src="js/pageTransition.js"></script>
 <script src="js/switchImages.js"></script>

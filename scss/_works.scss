@@ -46,6 +46,10 @@
         .swiper-container {
           width: 50%;
 
+          @include sp {
+            width: 100%;
+          }
+
           .swiper-cube-shadow:before {
             background-color: #fff;
           }
@@ -54,6 +58,21 @@
           .swiper-button-next {
             color: #000;
             opacity: 0.5;
+
+            @include sp {
+              color: #fff;
+              opacity: 1;
+            }
+          }
+          .swiper-button-next {
+            @include sp {
+              right: -13px;
+            }
+          }
+          .swiper-button-prev {
+            @include sp {
+              left: -13px;
+            }
           }
 
           img {
@@ -65,25 +84,21 @@
           width: 100%;
           display: block;
 
-          @include sp {
-            width: 100%;
-          }
-
           img {
             width: 100%;
 
-            @include sp {
-              width: 87%;
-              margin: 0 auto;
-            }
+            // @include sp {
+            //   width: 87%;
+            //   margin: 0 auto;
+            // }
           }
         }
         .no-link-img {
           width: 50%;
 
-          @include sp {
-            width: 87%;
-          }
+          // @include sp {
+          //   width: 87%;
+          // }
         }
 
         .sp-site-slide {

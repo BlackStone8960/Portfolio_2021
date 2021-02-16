@@ -1,5 +1,13 @@
 #works {
   .section__inner {
+    padding-top: 120px;
+    display: block !important;
+    align-items: unset !important;
+
+    @include sp {
+      padding-top: 0;
+    }
+
     .works-wrapper {
       width: 100%;
 

@@ -344,8 +344,10 @@ html {
 
 .page-control .arrow-box > span {
   position: absolute;
-  right: 50%;
+  right: 100%;
   top: 157%;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
   font-family: "Century Gothic";
   font-size: 24px;
 }
@@ -370,7 +372,7 @@ html {
 .page-control .arrow-box--bottom > span {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   right: auto;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
@@ -396,7 +398,7 @@ html {
 .page-control .arrow-box--top > span {
   position: absolute;
   left: 50% !important;
-  top: 100% !important;
+  top: 105% !important;
   bottom: auto !important;
   -webkit-transform: translate(-50%, 0px) !important;
           transform: translate(-50%, 0px) !important;
@@ -610,6 +612,20 @@ html {
 
 #skills .section__inner .skills-wrapper .skill-blocks .skill-block__icon .icon-svg {
   width: 67px;
+}
+
+#works .section__inner {
+  padding-top: 120px;
+  display: block !important;
+  -webkit-box-align: unset !important;
+      -ms-flex-align: unset !important;
+          align-items: unset !important;
+}
+
+@media (max-width: 767px) {
+  #works .section__inner {
+    padding-top: 0;
+  }
 }
 
 #works .section__inner .works-wrapper {

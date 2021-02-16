@@ -16,6 +16,7 @@
         flex-flow: row;
         justify-content: space-between;
         margin-bottom: 20px;
+        align-items: center;
 
         @include sp {
           display: none;
@@ -25,9 +26,23 @@
           display: block;
           width: 19.8%;
           height: 100%;
+          box-sizing: border-box;
 
           img {
-            width: 100%;
+            width: 95%;
+            margin: 0 auto;
+            display: block;            
+
+            @include sp {
+              width: 100%;
+              margin: 0;
+              display: inline;
+            }
+
+            &.active {
+              border: 2px solid $green;
+              box-shadow: 0 0 3px 2px lighten($color: $green, $amount: 30%);
+            }
           }
         }
       }

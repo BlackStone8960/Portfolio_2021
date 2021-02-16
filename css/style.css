@@ -1,3 +1,33 @@
+@-webkit-keyframes jump {
+  25% {
+    top: 0%;
+  }
+  50% {
+    top: 55%;
+  }
+  75% {
+    top: 30%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes jump {
+  25% {
+    top: 0%;
+  }
+  50% {
+    top: 55%;
+  }
+  75% {
+    top: 30%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
 .sp-visible {
   display: none;
 }
@@ -67,6 +97,8 @@ em {
   background-color: #171717;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+  -webkit-transition-property: left, top, z-index;
+  transition-property: left, top, z-index;
   overflow: hidden;
 }
 
@@ -195,6 +227,23 @@ em {
   height: 100%;
   position: relative;
   text-align: center;
+}
+
+.section-wrapper .section .sns-wrapper .sns-icon-list .sns-icon a:hover i {
+  -webkit-animation: jump .4s;
+          animation: jump .4s;
+}
+
+.section-wrapper .section .sns-wrapper .sns-icon-list .sns-icon a:hover i[class*="linkedin"] {
+  color: #0A66C2;
+}
+
+.section-wrapper .section .sns-wrapper .sns-icon-list .sns-icon a:hover i[class*="envelope"] {
+  color: #CD3C30;
+}
+
+.section-wrapper .section .sns-wrapper .sns-icon-list .sns-icon a:hover i[class*="twitter"] {
+  color: #1DA1F2;
 }
 
 .section-wrapper .section .sns-wrapper .sns-icon-list .sns-icon a i {
@@ -644,6 +693,9 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -656,10 +708,28 @@ html {
   display: block;
   width: 19.8%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #works .section__inner .works-wrapper .capture-wrapper a img {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #works .section__inner .works-wrapper .capture-wrapper a img {
+    width: 100%;
+    margin: 0;
+    display: inline;
+  }
+}
+
+#works .section__inner .works-wrapper .capture-wrapper a img.active {
+  border: 2px solid #00CC6A;
+  -webkit-box-shadow: 0 0 3px 2px #66ffb6;
+          box-shadow: 0 0 3px 2px #66ffb6;
 }
 
 #works .section__inner .works-wrapper .site-description {

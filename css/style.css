@@ -665,14 +665,6 @@ html {
   width: 67px;
 }
 
-#works .section__inner {
-  padding-top: 120px;
-  display: block !important;
-  -webkit-box-align: unset !important;
-      -ms-flex-align: unset !important;
-          align-items: unset !important;
-}
-
 @media (max-width: 767px) {
   #works .section__inner {
     padding-top: 0;
